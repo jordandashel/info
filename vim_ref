@@ -38,6 +38,27 @@ command		{custom_remap} description
 :CtrlPTag	{<leader>.} fuzzy search tags
 		/requires CtrlP/
 
+
+================================================================================
+ tabs
+================================================================================
+
+	How to interact with tabs.
+
+:tabe[dit] {filename}	open file in new tab
+
+<C-w>T	   		move current window into new tab
+
+:tabc[lose]		close tab and all of its windows
+
+:tabo[nly]		close other tabs
+
+:tabn[ext] {N}		[{N}gt] switch to tab N
+
+:tabn[ext]		[gt] switch to next tab
+
+:tabp[revious]		[gT] switch to previous tab
+
 ================================================================================
  misc
 ================================================================================
