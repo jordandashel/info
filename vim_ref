@@ -25,15 +25,25 @@ command		{custom_remap} description
 
 :tselect	(:ts) show list of tags
 
-:tnext		(:tn) go to next tag in list
+:tnext		(:tn) go to next tag defintion
 
-:tprev		(:tp) go to previous tag in list
+:tprev		(:tp) go to previous tag defintion
 
-:tfirst		(:tf) go to first tag in list
+:tfirst		(:tf) go to first tag defintion
 
-:tlast		(:tl) go to last tag in list
+:tlast		(:tl) go to last tag defintion
 
 :tags		() show list of traversed tags
 
 :CtrlPTag	{<leader>.} fuzzy search tags
 		/requires CtrlP/
+
+================================================================================
+ misc
+================================================================================
+
+	This is a section for items that are
+	either truly miscellaneous, or for items
+	that don't have a section yet.
+
+:lcd		(:lc) change directory for current window 
