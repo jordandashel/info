@@ -1,0 +1,39 @@
+vim reference sheet
+
+STRUCTURE:
+
+command		(abbrev_cmd) description
+		/notes/
+
+command		{custom_remap} description
+		/denotes something set in .vimrc/
+
+================================================================================
+ ctags
+================================================================================
+
+	ctags provide a handy way to navigate
+	source files. A `tags` file can be
+	generated with `ctags -R .` in the
+	directory to be indexed.
+
+<C-]>		() jump to tag definition
+
+<C-t>		() return up tree
+
+:tag n		(:ta) go directly to tag /n/
+
+:tselect	(:ts) show list of tags
+
+:tnext		(:tn) go to next tag in list
+
+:tprev		(:tp) go to previous tag in list
+
+:tfirst		(:tf) go to first tag in list
+
+:tlast		(:tl) go to last tag in list
+
+:tags		() show list of traversed tags
+
+:CtrlPTag	{<leader>.} fuzzy search tags
+		/requires CtrlP/
