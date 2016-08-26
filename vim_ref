@@ -2,11 +2,8 @@ vim reference sheet
 
 STRUCTURE:
 
-command		(abbrev_cmd) description
+:com[mand]	|normal_mode_cmd| {custom_remap} description
 		/notes/
-
-command		{custom_remap} description
-		/denotes something set in .vimrc/
 
 ================================================================================
  ctags
@@ -17,25 +14,25 @@ command		{custom_remap} description
 	generated with `ctags -R .` in the
 	directory to be indexed.
 
-<C-]>		() jump to tag definition
+<C-]>		jump to tag definition
 
-<C-t>		() return up tree
+<C-t>		return up tree
 
-:tag n		(:ta) go directly to tag /n/
+:ta[g] {n}	go directly to tag /n/
 
-:tselect	(:ts) show list of tags
+:ts[elect]	show list of tags
 
-:tnext		(:tn) go to next tag defintion
+:tn[ext]	go to next tag defintion
 
-:tprev		(:tp) go to previous tag defintion
+:tp[rev]	go to previous tag defintion
 
-:tfirst		(:tf) go to first tag defintion
+:tf[irst]	go to first tag defintion
 
-:tlast		(:tl) go to last tag defintion
+:tl[ast]	go to last tag defintion
 
-:tags		() show list of traversed tags
+:tags		show list of traversed tags
 
-:CtrlPTag	{<leader>.} fuzzy search tags
+:CtrlPTag	{ <leader>. } fuzzy search tags
 		/requires CtrlP/
 
 
@@ -53,11 +50,11 @@ command		{custom_remap} description
 
 :tabo[nly]		close other tabs
 
-:tabn[ext] {N}		[{N}gt] switch to tab N
+:tabn[ext] {N}		|{N}gt| switch to tab N
 
-:tabn[ext]		[gt] switch to next tab
+:tabn[ext]		|gt| switch to next tab
 
-:tabp[revious]		[gT] switch to previous tab
+:tabp[revious]		|gT| switch to previous tab
 
 ================================================================================
  misc
@@ -67,4 +64,4 @@ command		{custom_remap} description
 	either truly miscellaneous, or for items
 	that don't have a section yet.
 
-:lcd		(:lc) change directory for current window 
+:lc[d]		change directory for current window 
