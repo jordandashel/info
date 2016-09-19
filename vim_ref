@@ -48,13 +48,36 @@ STRUCTURE:
 
 :tabc[lose]		close tab and all of its windows
 
-:tabo[nly]		close other tabs
+:tabn[ext]		|gt| switch to next tab
 
 :tabn[ext] {N}		|{N}gt| switch to tab N
 
-:tabn[ext]		|gt| switch to next tab
+:tabo[nly]		close other tabs
 
 :tabp[revious]		|gT| switch to previous tab
+
+================================================================================
+ NerdTree
+================================================================================
+
+:Bookmark {name}	define a bookmark
+
+B                 	list bookmarks
+
+================================================================================
+ External commands
+================================================================================
+
+:!{cmd}			run a command in the shell
+
+:[range]!{filter}	filter [range] through external program {filter}
+
+:shell			start interactive shell session
+			/prefer CTRL-Z and `fg`/
+
+:read !{cmd}		read stdout of {cmd} into buffer
+
+:write !{cmd}		use buffer contents as stdin for {cmd}
 
 ================================================================================
  misc
@@ -65,3 +88,32 @@ STRUCTURE:
 	that don't have a section yet.
 
 :lc[d]		change directory for current window 
+
+
+================================================================================
+ vim regex
+================================================================================
+
+[Character classes]
+\s	whitespace
+
+[Metacharacters]
+\+	one or more
+$	line end
+
+
+================================================================================
+ tips
+================================================================================
+
+	This is a list of _tips_. They aren't vim
+	commands neccessarily, but more like
+	recipes; a series of steps to achieve a goal.
+
+--cleanup tabs and spaces-- /works with ranges/
+  :set tabstop={x}	// align everything to {x} tabwidth
+  :set noexpandtab	// use tabs
+  :retab!		// replace spaces with equivalent tabs
+
+  :set expandtab	// use spaces
+  :retab!		// replaces tabs with equivalent spaces
